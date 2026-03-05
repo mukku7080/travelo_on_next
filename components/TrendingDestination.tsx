@@ -1,3 +1,5 @@
+"use client"
+
 import { Box, Grid, Heading, Text } from "@chakra-ui/react";
 import TrendingDestinationCard from "./TrendingDestinationCard";
 

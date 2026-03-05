@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { Navbar } from "../components/Navbar";
-import Footer from "../components/Footer";
+"use client"
 import { Box } from "@chakra-ui/react";
 import Hero from "../components/Hero";
 import SearchWidget from "../components/SearchWidget";
@@ -9,11 +7,11 @@ import TrendingDestinations from "../components/TrendingDestination";
 
 export default function Home() {
   return (
-      <Box minH={'100vh'} >
-        <Hero />
-        <SearchWidget />
-        <Offers />
-        <TrendingDestinations />
-      </Box>
+    <Box minH={'100vh'} >
+      <Hero />
+      <SearchWidget />
+      <Offers />
+      <TrendingDestinations />
+    </Box>
   );
 }

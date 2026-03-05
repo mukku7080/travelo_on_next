@@ -179,6 +179,7 @@ export default function HotelListingPage() {
                                 p={4}
                                 gap={4}
                                 align="start"
+                                flexDirection={{base:'column',sm:'row',md:'row',lg:'row'}}
                             >
                                 <Image
                                     src={hotel.image}
@@ -230,10 +231,7 @@ export default function HotelListingPage() {
                                     </Badge>
                                 </Box>
 
-                                <Box textAlign="right">
-                                    {/* <Badge colorPalette="blue" mb={2}>
-                    {hotel.rating}
-                  </Badge> */}
+                                <Box textAlign="right">                             
                                     <Flex align="center" gap="3">
                                         {/* REVIEW TEXT */}
                                         <Box textAlign="right">
