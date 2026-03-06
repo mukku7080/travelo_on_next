@@ -39,16 +39,7 @@ const Page = () => {
     const [confirmationResult, setConfirmationResult] = useState<ConfirmationResult | null>(null);
     const [sendloading, setSendLoading] = useState<boolean>(false);
     const [verifyloading, setVerifyLoading] = useState<boolean>(false);
-
-    // const setupRecaptcha = () => {
-    //     if (!(window as any).recaptchaVerifier) {
-    //         (window as any).recaptchaVerifier = new RecaptchaVerifier(
-    //             auth,
-    //             "recaptcha-container",
-    //             { size: "invisible" }
-    //         );
-    //     }
-    // };
+ 
     const setupRecaptcha = () => {
         if (typeof window === "undefined") return;
 
